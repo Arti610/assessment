@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import styles from "./Sidebar.module.css";
 import { MenuItems } from "../../utils/MenuItems";
 import roundStatus from "../../assests/admin_meds.svg";
+import vector267 from "../../assests/Vector267.svg";
 
 const Sidebar = () => {
   return (
@@ -32,6 +33,8 @@ const Sidebar = () => {
           </div>
         </NavLink>
       ))}
+      <img src={vector267} alt="vector" />
+      <p className={styles.adminUser}>Admin</p>
       <NavLink
         to="/round_status"
         className={styles.menuitemCard}

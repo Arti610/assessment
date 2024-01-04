@@ -76,3 +76,25 @@ button {
 a {
   text-decoration: none;
 }
+
+table {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.09);
+  border: 1px solid var(--System-stroke2, #dadce0);
+  margin-bottom: 10rem;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: white;
+
+  font-size: 14px;
+}
+tbody tr td,
+th {
+  border: 1px solid var(--System-stroke2, #dadce0);
+  font-size: 12.5px;
+  padding: 10px;
+}

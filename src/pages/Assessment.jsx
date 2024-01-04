@@ -9,7 +9,13 @@ import filter from "../assests/filter_list_alt.svg";
 import search from "../assests/search.svg";
 import segment from "../assests/segment.svg";
 import SidebarMb from "../components/sidebar/SidebarMb";
+import { ToastContainer } from "react-toastify";
+import { useSelector } from "react-redux";
+import { selectAssessments } from "../redux/assessmentSlice";
 const Assessment = () => {
+  const assessmentData = useSelector(selectAssessments);
+  console.log("assessmentData", assessmentData);
+
   const [filterToggle, setFilterToggle] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [sidebarShow, setSidebarShow] = useState(false);
@@ -97,6 +103,32 @@ const Assessment = () => {
           </div>
         </div>
       </div>
+      {assessmentData.length > 0 && (
+        <table>
+          <thead>
+            <tr>
+              <th>Name of Assessment</th>
+              <th>Purpose of the test is</th>
+              <th>Description</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            {assessmentData.map((item, i) => {
+              return (
+                <tr key={i}>
+                  <td>{item?.assessmentName}</td>
+                  <td>{item?.testPurpose}</td>
+                  <td>{item?.description}</td>
+
+                  <td>{item?.duration}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      )}
+      <ToastContainer />
     </>
   );
 };

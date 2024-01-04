@@ -37,6 +37,7 @@ const SidebarMb = (props) => {
           <img src={roundStatus} alt="roundStatus" />
           <h4>Round Status</h4>
         </div>
+
         <p className={styles.adminUser}>Admin</p>
       </div>
     </div>
