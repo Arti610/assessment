@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Unstop Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Work completed successfully according given formate
 
-## Available Scripts
+The work of a Front End Developer brings the whole picture together. Paint one that will wow
+everyone.
+As a part of the hiring process, please complete the following tasks.
+You need to create a fully responsive design (desktop, tablet, mobile) for the page provided in the
+following link using HTML, CSS, Angular, React, or any JavaScript framework.
+Figma Design link ->
+https://www.figma.com/file/wHHVk8YsbYG4DNJLTOu4RG/Untitled?type=design&node-id=0%3A437&mo
+de=design&t=vuska7XBLJcE8Hd1-1
+Figma prototype link mobile ->
+https://www.figma.com/proto/wHHVk8YsbYG4DNJLTOu4RG/Untitled?type=design&node-id=0-930&t=bb
+OEgwSUPXqPKLVC-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=0%3A437&mode=de
+sign
+Figma prototype desktop ->
+https://www.figma.com/proto/wHHVk8YsbYG4DNJLTOu4RG/Untitled?type=design&node-id=0-437&t=bb
+OEgwSUPXqPKLVC-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=0%3A437&mode=de
+sign
+How it should function?
 
-In the project directory, you can run:
+1. Design should be the same as is shown in the figma file.
+2. Use figma prototype for animations, user experience
+   What all you need to submit
+3. You need to write code as per the conditions and functionality mentioned above.
+4. You need to host it on any of the free/paid platform so that you can provide us a working web
+   URL for this problem.
+5. You need to upload the code as a zip file for us to look at your code and evaluate the same. You
+   can also send us a GIT link for the same.
+   Please note:
+   ● Write a good functional and optimum code.
+   ● Please write comments so that the evaluator can clearly understand your code.
+   ● In case of any queries, feel free to contact us at careers@unstop.com
 
-### `npm start`
+## Github Link - https://github.com/Arti610/assessment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+clone the git repository and then `npm i ` run this code for use the packages i used in this project after run the command `npm start` now you can watch the project accordingly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Here i am using some packages like :-
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Formik : for form handling
+  -react toastify - for showing the success or error message to the user
+- redux toolkit - for store the data and show that data in assessment page as a table formate when assessment data has more than 0 values
+- mui - for using some styled component for making better ui
