@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
 import { addAssessment } from "../../redux/assessmentSlice";
+import { validationSchema } from "../validationSchema";
 
 const AddAssessment = (props) => {
   const dispatch = useDispatch();
@@ -83,6 +84,7 @@ const AddAssessment = (props) => {
               skills: [],
               duration: "",
             }}
+            validationSchema={validationSchema}
             onSubmit={(values) => handleSubmit(values)}
           >
             {(formik) => (
@@ -101,10 +103,18 @@ const AddAssessment = (props) => {
                     <span>Name of assessment</span>
                     <input
                       type="text"
+                      required
                       placeholder="Type Here"
                       className={styles.input}
                       {...formik.getFieldProps("assessmentName")}
+                      onBlur={formik.handleBlur("assessmentName")}
                     />
+                    {formik.touched.assessmentName &&
+                    formik.errors.assessmentName ? (
+                      <div className={styles.error}>
+                        {formik.errors.assessmentName}
+                      </div>
+                    ) : null}
                   </div>
                   <div className={styles.inputContainer}>
                     <span>Purpose of the test is</span>
@@ -113,6 +123,7 @@ const AddAssessment = (props) => {
                       id="testPurpose"
                       className={styles.input}
                       {...formik.getFieldProps("testPurpose")}
+                      onBlur={formik.handleBlur("testPurpose")}
                     >
                       <option label="select" />
                       {testPurpose.map((option) => (
@@ -121,6 +132,11 @@ const AddAssessment = (props) => {
                         </option>
                       ))}
                     </select>
+                    {formik.touched.testPurpose && formik.errors.testPurpose ? (
+                      <div className={styles.error}>
+                        {formik.errors.testPurpose}
+                      </div>
+                    ) : null}
                   </div>
                   <div className={styles.inputContainer}>
                     <span>Description</span>
@@ -129,6 +145,7 @@ const AddAssessment = (props) => {
                       id="testPurpose"
                       className={styles.input}
                       {...formik.getFieldProps("description")}
+                      onBlur={formik.handleBlur("description")}
                     >
                       <option label="select" />
                       {testPurpose.map((option) => (
@@ -137,6 +154,11 @@ const AddAssessment = (props) => {
                         </option>
                       ))}
                     </select>
+                    {formik.touched.description && formik.errors.description ? (
+                      <div className={styles.error}>
+                        {formik.errors.description}
+                      </div>
+                    ) : null}
                   </div>
 
                   <div className={styles.inputContainer}>
@@ -166,7 +188,11 @@ const AddAssessment = (props) => {
                       type="text"
                       placeholder="Type Here"
                       className={styles.input}
+                      onBlur={formik.handleBlur("skills")}
                     />
+                    {formik.touched.skills && formik.errors.skills ? (
+                      <div className={styles.error}>{formik.errors.skills}</div>
+                    ) : null}
                   </div>
                   <span
                     onClick={() => addSkill(formik)}
@@ -181,7 +207,13 @@ const AddAssessment = (props) => {
                       placeholder="HH:MM:SS"
                       className={styles.input}
                       {...formik.getFieldProps("duration")}
+                      onBlur={formik.handleBlur("duration")}
                     />
+                    {formik.touched.duration && formik.errors.duration ? (
+                      <div className={styles.error}>
+                        {formik.errors.duration}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
                 <div className={styles.modalFooter}>
