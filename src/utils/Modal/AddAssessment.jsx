@@ -35,8 +35,8 @@ const AddAssessment = (props) => {
           position: "absolute",
           top: "50%",
           left: "50%",
+          width: `clamp(300px, 50%, 500px)`,
           transform: "translate(-50%, -50%)",
-          width: "500px",
           backgroundColor: "white",
           borderRadius: "8px",
         }}

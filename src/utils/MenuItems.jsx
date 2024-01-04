@@ -8,24 +8,18 @@ export const MenuItems = [
     id: 1,
     title: "Dashboard",
     icon: dashboardIcon,
-    path: "/",
+    path: "/dashboard",
   },
   {
     id: 2,
     title: "Assesment",
     icon: assesmentIcon,
-    path: "/assessment",
+    path: "/",
   },
   {
     id: 3,
     title: "My Library",
     icon: myLibraryIcon,
     path: "/my_library",
-  },
-  {
-    id: 4,
-    title: "Round Status",
-    icon: roundStatusIcon,
-    path: "/round_status",
   },
 ];

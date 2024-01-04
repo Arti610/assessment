@@ -4,10 +4,7 @@ import purpose from "../../assests/Frame1000009100.svg";
 
 const TotalPurpose = () => {
   return (
-    <div
-      className={styles.TPcard}
-      style={{ borderRight: "1px solid #dadce0;" }}
-    >
+    <div className={styles.TPcard} style={{ borderRight: "1px solid #dadce0" }}>
       <h4>Total Purpose</h4>
       <div className={styles.countingContainer}>
         <img src={purpose} alt="view" />

@@ -44,3 +44,58 @@
 .sidebar_icon {
   color: var(--primary-color);
 }
+
+/* Mb Sidebar @start */
+.mbSidebar {
+  display: flex;
+  width: 85%;
+  height: 1074px;
+  padding: 40px 20px 10px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background: var(--secondary-5, #f2f8fe);
+}
+.mbSidebarMenu {
+  display: flex;
+  height: 36px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.mbDashboard {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--secondary-5, #f2f8fe);
+}
+.roundStatus {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--secondary-5, #f2f8fe);
+}
+.rs {
+  display: flex;
+  gap: 10px;
+}
+
+.adminUser {
+  display: flex;
+  height: 18px;
+  padding: 6px 8px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 22px;
+  border: 1px solid var(--Accent-New-red, #d63500);
+  background: var(--Accent-red-light, #fbebea);
+  color: #d63500;
+}

@@ -14,13 +14,7 @@ const AssessmentOverview = () => {
         <TotalPurpose />
       </div>
       <div className={styles.assessmentOverviewMb}>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "space-between",
-          }}
-        >
+        <div className={styles.mbwidth}>
           <TotalAssessment />
           <TotalPurpose />
         </div>
