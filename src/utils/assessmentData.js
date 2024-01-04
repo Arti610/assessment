@@ -8,7 +8,7 @@ export const assesmentData = [
     durationTitle: "Duration",
     question: "00",
     questionTitle: "Questions",
-    user: [{ name: "LP" }],
+    user: [{ first_name: "Lata ", last_name: "Vishwakarma" }],
   },
   {
     id: 2,
@@ -19,6 +19,10 @@ export const assesmentData = [
     durationTitle: "Duration",
     question: "00",
     questionTitle: "Questions",
-    user: [{ name: "LP" }, { name: "LP" }, { name: "LP" }],
+    user: [
+      { first_name: "Laxmi", last_name: "Singh" },
+      { first_name: "Lalit", last_name: "Modi" },
+      { first_name: "Lily ", last_name: "Singh" },
+    ],
   },
 ];

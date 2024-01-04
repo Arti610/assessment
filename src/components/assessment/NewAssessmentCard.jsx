@@ -25,9 +25,9 @@ const NewAssesmentCard = () => {
           subjective (text or paragraph)!
         </p>
       </div>
-      {/* {openModal ? (
+      {openModal ? (
         <AddAssessment openModal={openModal} handleClose={handleClose} />
-      ) : null} */}
+      ) : null}
     </>
   );
 };

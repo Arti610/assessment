@@ -8,6 +8,15 @@ import assesmentIcon from "../../assests/Frame1000008703.svg";
 import { assesmentData } from "../../utils/assessmentData";
 
 const AssesmentCard = () => {
+  const generateColor = (name) => {
+    const hash = name
+      .split("")
+      .reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const colors = ["#FF5733", "#33FF57", "#5733FF"]; // Array of colors
+    const index = hash % colors.length;
+    return colors[index];
+  };
+
   return (
     <>
       {assesmentData?.map((item) => (
@@ -47,8 +56,15 @@ const AssesmentCard = () => {
               </div>
 
               {item?.user.map((user, i) => (
-                <div className={styles.userContainer} key={i}>
-                  <p className={styles.userProfile}>{user?.name}</p>
+                <div
+                  className={styles.userContainer}
+                  key={i}
+                  style={{ backgroundColor: generateColor(user.first_name) }}
+                >
+                  <p className={styles.userProfile}>
+                    {user?.first_name.charAt(0)}
+                    {user?.last_name.charAt(0)}
+                  </p>
                 </div>
               ))}
             </div>
