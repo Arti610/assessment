@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./AddAssessment.module.css";
 import cut from "../../assests/cut.svg";
 import { Box, Modal } from "@mui/material";
@@ -22,7 +22,15 @@ const AddAssessment = (props) => {
     { value: "leadership_potential", label: "Leadership Potential" },
     { value: "cultural_fit", label: "Cultural Fit" },
   ];
+  const [skills, setSkills] = useState([]);
+  const [newSkill, setNewSkill] = useState("");
 
+  const addSkill = () => {
+    if (newSkill.trim() !== "") {
+      setSkills([...skills, newSkill]);
+      setNewSkill("");
+    }
+  };
   return (
     <Modal
       open={props.openModal}
@@ -90,14 +98,28 @@ const AddAssessment = (props) => {
                 ))}
               </select>
             </div>
+
             <div className={styles.inputContainer}>
               <span>Skills</span>
+              <div id="inputContainer" className={styles.skillContainer}>
+                {skills.map((skill, index) => (
+                  <div key={index} className={styles.skills}>
+                    <span>{skill}</span>
+                    <img src={cut} alt="" className={styles.cutImg} />
+                  </div>
+                ))}
+              </div>
               <input
+                value={newSkill}
+                onChange={(e) => setNewSkill(e.target.value)}
                 type="text"
                 placeholder="Type Here"
                 className={styles.input}
               />
             </div>
+            <span onClick={addSkill} className={styles.addButton}>
+              Add Skill
+            </span>
             <div className={styles.inputContainer}>
               <span>Duration of assessment</span>
               <input

@@ -1,7 +1,6 @@
 import dashboardIcon from "../assests/dashboard.svg";
 import assesmentIcon from "../assests/note_alt.svg";
 import myLibraryIcon from "../assests/quiz.svg";
-import roundStatusIcon from "../assests/admin_meds.svg";
 
 export const MenuItems = [
   {
