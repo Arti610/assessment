@@ -1,0 +1,24 @@
+.landingPageContainer {
+  display: flex;
+  height: 100vh; /* Adjust as needed */
+}
+
+.sidebarContainer {
+  width: 10vw;
+}
+
+.contentbarContainer {
+  width: 85vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebarContainer {
+    width: 0vw;
+    display: none;
+  }
+  .contentbarContainer {
+    width: 100vw;
+    margin: auto;
+  }
+}

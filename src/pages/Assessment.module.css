@@ -1,0 +1,89 @@
+.contentArea {
+  display: flex;
+  width: 100%; /* Set width to 70vw */
+  height: 100vh;
+  padding-top: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.contentContainerTop {
+  display: flex;
+  height: 70px;
+  padding: 0px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 12px 12px 0px 0px;
+  border-bottom: 1px solid var(--System-Divider, #dde5ea);
+  background: #fff;
+}
+
+.contentContainerBottom {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 0px 0px 12px 12px;
+  background: #fff;
+  width: 100%;
+}
+
+.assesmentOverview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.myAssesment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  width: 100%;
+}
+.myAssesmentTitle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.myAssesmentCard {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.navigationTitle {
+  color: #0073e6;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+  display: flex;
+  height: 70px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 3px solid var(--Secondary-1, #0073e6);
+  background: #fff;
+}
