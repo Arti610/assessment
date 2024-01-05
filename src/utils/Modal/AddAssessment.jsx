@@ -103,7 +103,6 @@ const AddAssessment = (props) => {
                     <span>Name of assessment</span>
                     <input
                       type="text"
-                      required
                       placeholder="Type Here"
                       className={styles.input}
                       {...formik.getFieldProps("assessmentName")}
@@ -188,11 +187,7 @@ const AddAssessment = (props) => {
                       type="text"
                       placeholder="Type Here"
                       className={styles.input}
-                      onBlur={formik.handleBlur("skills")}
                     />
-                    {formik.touched.skills && formik.errors.skills ? (
-                      <div className={styles.error}>{formik.errors.skills}</div>
-                    ) : null}
                   </div>
                   <span
                     onClick={() => addSkill(formik)}
